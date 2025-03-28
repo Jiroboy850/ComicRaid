@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* General Page Styling */
+
+style {
+	width: 100px;
+}
+
+body {			
+    background-image: url("background.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-size: cover; /* Ensures full coverage */
+    background-attachment: fixed; /* Prevents scrolling gaps */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}	
+
+
+main {
+	position: relative;
+	top: 5px;
+	text-align: center;
+	padding: 5px;
+}
+/* Main Layout for H1 & About Section */
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+/* Text Styling */
+p {
+    color: #FFFFFF; /* Dark gray for readability */
+    font-size: 39px;
+
+}
+
+h1:hover {
+    color: #000000; /* Bright comic-style orange */
+    font-size: 40px;
+	transform: scale(1.5)
+    text-align: center;
+	flex: 2;
+}
+
+.store-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.store-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.product-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+.buy-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #218838;
+}
+/* Default styling for the logo */
+header_img {
+	position: relative;
+	width: auto;
+    text-align: center; /* Centers inline elements like images */
+}
+
+nav_img {
+  width: 400px; /* Ensures responsiveness */
+  max-width: 400px; /* Limits the image size */
+}
+
+p {
+    color: #333; /* Dark gray for readability */
+    font-size: 18px;
+}
+
+h1 {
+    color: #000000; /* Comic-style black */
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {			
+    color: #FFD700; /* Gold for contrast */
+    font-size: 27px;
+}
+
+/* Navigation Bar */
+nav {
+	position: relative;
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-menu img {
+    width: 200px; /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth effect */
+}
+
+.nav-menu img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+footer {
+	background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+	color: gray;
+    margin: 5px 0;
+}
+
+address {
+  display: block;
+  font-family: arial;
+}
+
+
+/* Social Media Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #FFD700; /* Gold links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FF4500; /* Changes to orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .nav-menu img {
+        width: 150px; /* Smaller images for mobile */
+    }
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  img {
+    width: 100%; /* Adjusts image width for smaller screens */
+    max-width: 1000px;
+  }
