@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* General Page Styling */
+
+style {
+	width: 100px;
+}
+
+body {			
+    background-image: url("background.png");
+    background-repeat: repeat-y;
+    background-position: left top;
+    background-size: cover; /* Ensures full coverage */
+    background-attachment: fixed; /* Prevents scrolling gaps */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}	
+
+
+main {
+	position: relative;
+	top: 5px;
+	text-align: center;
+	padding: 5px;
+}
+
+/* Text Styling */
+
+/* Default styling for the logo */
+header_img {
+	position: relative;
+	width: auto;
+    text-align: center; /* Centers inline elements like images */
+}
+
+nav_img {
+  width: 400px; /* Ensures responsiveness */
+  max-width: 400px; /* Limits the image size */
+}
+
+p {
+    color: #333; /* Dark gray for readability */
+    font-size: 20px;
+}
+
+h1 {
+    color: #000000; /* Comic-style black */
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {			
+    color: #FFD700; /* Gold for contrast */
+    font-size: 27px;
+}
+.about-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4em 1em;
+}
+
+.about-card {
+  background-color: #fff;
+  padding: 2em 2.5em;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 1.5em;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.about-card p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+/* Navigation Bar */
+nav {
+	position: relative;
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav-menu img {
+    width: 16.66%; /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth effect */
+}
+
+nav-menu img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+footer {
+	background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content p {
+	color: gray;
+    margin: 5px 0;
+}
+
+address {
+  display: block;
+  font-family: arial;
+}
+
+
+/* Social Media Links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #FFD700; /* Gold links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FF4500; /* Changes to orange on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .nav-menu img {
+        width: 150px; /* Smaller images for mobile */
+    }
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  img {
+    width: 100%; /* Adjusts image width for smaller screens */
+    max-width: 1000px;
+  }
+}
